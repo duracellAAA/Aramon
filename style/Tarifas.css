@@ -3,6 +3,7 @@ body {
     color: black;
     margin: 0;
     padding: 0;
+    background-color: #c8d8d5;
 }
 
 #wrapper {
@@ -33,49 +34,48 @@ header {
     height: 20%; /* Ajusta la altura proporcionalmente */
 }
 
-.tarifas {
-    background-color: #c8d8d5;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.5em;
-    margin-bottom: 40px;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.tarifa-item {
-    background: #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    margin-bottom: 30px;
+.tarifas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.2em;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: white; /* Mantener fondo blanco para la tabla */
 }
 
-.tarifa-item:hover {
-    transform: translateY(-10px);
+.tarifas-table th, .tarifas-table td {
+    padding: 15px 20px;
+    text-align: left;
 }
 
-h2 {
+.tarifas-table thead {
+    background-color: #FFE680;
+}
+
+.tarifas-table th {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.tarifas-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tarifas-table tbody tr:hover {
+    background-color: #c8d8d5;
+    transition: background-color 0.3s;
+}
+
+.tarifa-item h2 {
     font-size: 2.5em;
-    margin-bottom: 15px;
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.8;
-    color: #333;
+    background-color: #c8d8d5;
+    padding: 10px 0;
+    text-align: center;
     margin-bottom: 20px;
 }
 
