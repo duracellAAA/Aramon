@@ -1,0 +1,96 @@
+/* Asegura que el HTML y el body ocupen toda la altura */
+html, body {
+    height: 100%;  /* 100% de la altura */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    color: black;
+    overflow-x: hidden;  /* Evita desplazamiento horizontal */
+}
+
+/* Contenedor general que usará Flexbox */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;  /* Asegura que ocupe el 100% de la altura */
+}
+
+/* Header */
+header {
+    height: 350px;
+    background: #FFE680;
+    background-image: url(../images/Montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Logo */
+.logo-aramon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 20%;
+}
+
+/* Middle - Contenedor principal de contenido */
+.gracias-container {
+    background-color: #c8d8d5;
+    padding: 60px 20px;
+    text-align: center;
+    flex: 1;  /* Esto asegura que el contenedor se expanda para llenar el espacio */
+}
+
+/* Títulos y texto dentro del contenedor */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Botón Volver */
+.btn-volver {
+    background-color: #d80041;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-volver:hover {
+    background-color: #a6002b;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    background-size: 550px;
+    width: 100%;
+    position: relative;
+    bottom: 0;  /* Asegura que el footer esté al final de la página */
+    margin-top: auto;  /* Esto empuja el footer al fondo */
+}
+
+/* Iconos dentro del footer */
+#footer ion-icon {
+    font-size: 40px;
+    color: white;
+    margin: 0 10px;
+    text-align: center;
+}

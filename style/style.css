@@ -80,6 +80,7 @@ header {
 }
 
 /* Estilo para lista de pistas de esquí */
+/* Estilo para centrar la sección de pistas */
 .pistas {
     background-color: #f0f8ff; /* Color de fondo opcional */
     display: flex;
@@ -126,18 +127,17 @@ header {
     transform: rotate(15deg); /* Gira ligeramente la imagen */
 }
 
+/* Estilo para los enlaces */
 .pistas-list li a {
     text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Hereda el color del elemento padre (normalmente negro) */
-    font-weight: normal; /* Sin negrita inicialmente */
-    transition: color 0.3s, text-decoration 0.3s;
+    color: black; /* Color del texto */
+    font-weight: bold; /* Hace el texto en negrita */
+    transition: color 0.3s;
 }
 
-/* Estilo cuando el ratón está encima del enlace */
+/* Estilo para cuando se pasa el ratón por encima del enlace */
 .pistas-list li a:hover {
-    color: #0066cc; /* Cambia a un color diferente al pasar el ratón */
-    text-decoration: underline; /* Aparece subrayado al pasar el ratón */
-    font-weight: bold; /* Opcional: añade negrita */
+    color: #0066cc; /* Cambia el color cuando el ratón está sobre el enlace */
 }
 
 /* Footer

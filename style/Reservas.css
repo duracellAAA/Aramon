@@ -33,7 +33,7 @@ header {
 }
 
 /* Contenedor de contacto */
-.contacto-container {
+.reservas-container {
     background-color: #c8d8d5;
     padding: 60px 20px;
     text-align: center;
@@ -54,39 +54,8 @@ p {
     margin-bottom: 40px;
 }
 
-/* Información de Contacto */
-.contact-info {
-    display: flex;
-    justify-content: center; /* Centra los elementos en el eje horizontal */
-    align-items: center; /* Alinea los elementos verticalmente */
-    gap: 30px; /* Controla el espacio entre los elementos */
-    margin-bottom: 40px;
-    width: 100%;
-    max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
-    margin-left: auto; /* Asegura que el contenedor se alinee correctamente */
-    margin-right: auto; /* Asegura que el contenedor se alinee correctamente */
-}
-
-.contact-method {
-    text-align: center; /* Centra el contenido de cada item */
-    max-width: 300px; /* Limita el ancho de cada item de contacto */
-}
-
-.contact-method h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para los h2 */
-}
-
-.contact-method p {
-    font-size: 18px;
-    color: #333;
-}
-
-
-/* Formulario de Contacto */
-.formulario-contacto {
+/* Formulario de Reservas */
+.formulario-reservas {
     background: #ffffff;
     padding: 30px;
     border-radius: 10px;
@@ -97,21 +66,21 @@ p {
     margin: 0 auto; /* Centra el formulario */
 }
 
-.formulario-contacto h2 {
+.formulario-reservas h2 {
     font-size: 2.2em;
     margin-bottom: 15px;
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.formulario-contacto label {
+.formulario-reservas label {
     font-size: 16px;
     color: #000000;
     margin-bottom: 5px;
     display: block;
 }
 
-.formulario-contacto input, .formulario-contacto textarea {
+.formulario-reservas input, .formulario-reservas select, .formulario-reservas textarea {
     width: 100%;
     padding: 8px;
     font-size: 16px;
@@ -120,7 +89,7 @@ p {
     margin-bottom: 15px;
 }
 
-.formulario-contacto button {
+.formulario-reservas button {
     background-color: #d80041;
     color: white;
     font-size: 16px;
@@ -130,8 +99,18 @@ p {
     cursor: pointer;
 }
 
-.formulario-contacto button:hover {
+.formulario-reservas button:hover {
     background-color: #a6002b;
+}
+
+/* Ajuste para el campo select */
+.formulario-reservas select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
 }
 
 /* Footer */
