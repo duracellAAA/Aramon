@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-color: #c8d8d5;
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Header */
+header {
+    height: 350px;
+    background: #FFE680;
+    background-image: url(../images/Montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Para permitir que los elementos dentro se ubiquen de manera más precisa */
+}
+
+/* Logo */
+.logo-aramon {
+    position: absolute; /* Para posicionarlo de manera absoluta dentro del header */
+    top: 50%; /* Centra el logo verticalmente */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro exacto */
+    width: auto; /* Deja que el logo se ajuste automáticamente */
+    height: 20%; /* Ajusta la altura proporcionalmente */
+}
+
+.tarifas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.2em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Mantener fondo blanco para la tabla */
+}
+
+.tarifas-table th, .tarifas-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.tarifas-table thead {
+    background-color: #FFE680;
+}
+
+.tarifas-table th {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.tarifas-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tarifas-table tbody tr:hover {
+    background-color: #c8d8d5;
+    transition: background-color 0.3s;
+}
+
+.tarifa-item h2 {
+    font-size: 2.5em;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: #c8d8d5;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    background-size: 550px;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer ion-icon {
+    font-size: 40px;
+    color: white;
+    margin: 0 10px;
+    text-align: center;
+}

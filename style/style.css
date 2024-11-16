@@ -1,0 +1,162 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	height: 350px;
+	background: #FFE680;
+	background-image: url(../images/Montaña.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.logoaramon {
+    position: absolute; /* Para posicionarlo de manera absoluta dentro del header */
+    top: 50%; /* Centra el logo verticalmente */
+    left: 50%; /* Centra el logo horizontalmente */
+    transform: translate(-50%, -175%); /* Ajusta la posición al centro exacto */
+    width: auto; /* Deja que el logo se ajuste automáticamente */
+    height: 20%; /* Ajusta la altura proporcionalmente */
+}
+/* Middle
+-----------------------------------------------------------------------------*/
+/* Estilos para la sección de inicio */
+.inicio {
+	background-color: #c8d8d5;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.inicio h1 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+	margin-top: -20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.inicio h2 {
+	font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.inicio ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.inicio ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del contenedor para centrar el contenido */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para lista de pistas de esquí */
+.pistas {
+    background-color: #f0f8ff; /* Color de fondo opcional */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 400px; /* Asegura altura suficiente para centrar */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Ajusta la lista para que esté centrada */
+.pistas-list {
+    list-style: none; /* Elimina las viñetas predeterminadas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Ajustes de los elementos de la lista */
+.pistas-list li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 15px 0; /* Espaciado entre los elementos */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.pistas-list li:hover {
+    transform: scale(1.05); /* Agranda ligeramente el elemento */
+    color: #0066cc; /* Cambia el color del texto */
+}
+
+/* Ajustes para las imágenes */
+.pistas-list li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%; /* Hace la imagen circular */
+    transition: transform 0.3s;
+}
+
+.pistas-list li img:hover {
+    transform: rotate(15deg); /* Gira ligeramente la imagen */
+}
+
+.pistas-list li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre (normalmente negro) */
+    font-weight: normal; /* Sin negrita inicialmente */
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Estilo cuando el ratón está encima del enlace */
+.pistas-list li a:hover {
+    color: #0066cc; /* Cambia a un color diferente al pasar el ratón */
+    text-decoration: underline; /* Aparece subrayado al pasar el ratón */
+    font-weight: bold; /* Opcional: añade negrita */
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	text-align: center;
+	padding: 20px;
+    float: left;
+	clear: left;
+	height: 50px;
+	background: black;
+	background-size: 500px;
+	width: 97.7%;
+}
+
+#footer ion-icon {
+    font-size: 40px; 
+    color: white; 
+    margin: 0 10px;
+	text-align: center; 
+}
+
